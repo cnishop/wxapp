@@ -7,7 +7,7 @@ Page({
     motto: 'Hello World',
     message:'hello 小程序！!!',
     id:"",
-    isshow : true,
+    isshow : 55,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

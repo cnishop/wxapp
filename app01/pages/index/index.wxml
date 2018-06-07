@@ -13,6 +13,9 @@
 
 </view>
 <view id="v-msg{{id}}" bindtap="tapName" wx:if="{{isshow}}"  > {{ message }} </view>
-
+<view id="v-msg{{id}}" bindtap="tapName"  > isshow={{isshow}} </view>
+<view id="v-msg{{id}}" bindtap="tapName" wx:if="{{isshow<=10}}"  > 小于或等于10</view>
+<view id="v-msg{{id}}" bindtap="tapName" wx:elif="{{isshow>10&&isshow<=50}}"  > 大于10，小于等于50</view>
+<view id="v-msg{{id}}" bindtap="tapName" wx:else  > 大于50</view>
 
 
