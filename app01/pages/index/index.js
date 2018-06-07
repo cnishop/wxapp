@@ -5,6 +5,9 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    message:'hello 小程序！!!',
+    id:"",
+    isshow : true,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -16,7 +19,7 @@ Page({
     })
   },
   onLoad: function () {
-    console.log('--index.js--onload---')
+    console.log('--index.js--onload---页面加载')
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -46,19 +49,19 @@ Page({
   },
 
   onReady:function(){
-    console.log('--index.js--onReady---页面开始')
+    console.log('--index.js--onReady---页面初次渲染完成')
   },
   onShow: function () {
-    console.log('--index.js--onShow---')
+    console.log('--index.js--onShow---页面显示')
   },
   onHide: function () {
-    console.log('--index.js--onHide---')
+    console.log('--index.js--onHide---页面隐藏')
   },
   onUnload: function () {
-    console.log('--index.js--onUnload---')
+    console.log('--index.js--onUnload---页面卸载')
   },
   onReachBottom: function () {
-    console.log('--index.js--onReachBottom---')
+    console.log('--index.js--onReachBottom---页面上拉触底')
   },
   getUserInfo: function(e) {
     console.log(e)
@@ -67,7 +70,15 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+
+  tapName:function(event){
+    console.log(event)
+    this.setData({
+      message:'好吧，我居然被点了',
+    })
   }
+
 }
 
 

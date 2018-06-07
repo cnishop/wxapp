@@ -38,7 +38,9 @@ App({
   onShow: function () {
     console.log('--app.js--onShow---小程序显示')
   },
-
+  onHide: function () {
+    console.log('--app.js--onHide---小程序隐藏')
+  },
   globalData: {
     userInfo: null
   }
