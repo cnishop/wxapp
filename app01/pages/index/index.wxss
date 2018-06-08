@@ -9,7 +9,7 @@
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
-  margin: 20rpx;
+  margin: 10rpx;
   border-radius: 50%;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .usermotto {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 #v-msg {

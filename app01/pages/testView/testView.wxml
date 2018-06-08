@@ -1,0 +1,25 @@
+<!--pages/testView/testView.wxml-->
+<text>新建的testView画面</text>
+
+<view>
+<scroll-view
+  scroll-y="true"
+  upper-threshold="20"
+  bindscrolltoupper="scrolltoupperFun"
+  lower-threshold="30"
+  bindscrolltolower="scrolltolowerFun"
+  scroll-into-view='{{intoView}}'
+  style="height:600rpx"
+>
+<view id='v1' style="height:300rpx;text-align:center;background-color:cadetblue;" >
+这里是视图内容1
+</view>
+<view id='v2' style="height:500rpx;text-align:center;background-color:darkkhaki;" >
+这里是视图内容2
+</view>
+<view id='v3' style="height:600rpx;text-align:center;background-color:indianred;" >
+这里是视图内容3
+</view>
+</scroll-view>
+
+</view>

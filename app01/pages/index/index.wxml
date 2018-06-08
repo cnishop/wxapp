@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<view class="container" wx:if="{{false}}">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -10,12 +10,30 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-
 </view>
-<view id="v-msg{{id}}" bindtap="tapName" wx:if="{{isshow}}"  > {{ message }} </view>
-<view id="v-msg{{id}}" bindtap="tapName"  > isshow={{isshow}} </view>
-<view id="v-msg{{id}}" bindtap="tapName" wx:if="{{isshow<=10}}"  > 小于或等于10</view>
-<view id="v-msg{{id}}" bindtap="tapName" wx:elif="{{isshow>10&&isshow<=50}}"  > 大于10，小于等于50</view>
-<view id="v-msg{{id}}" bindtap="tapName" wx:else  > 大于50</view>
+
+<block wx:if="{{false}}">
+  <view id="v-msg{{id}}" data-hi="xiaoxiao" bindtap="tapName" wx:if="{{isshow}}"> {{ message }} </view>
+  <view id="v-msg{{id}}" bindtap="tapName"> isshow={{isshow}} </view>
+  <view id="v-msg{{id}}" bindtap="tapName" wx:if="{{isshow<=10}}"> 小于或等于10</view>
+  <view id="v-msg{{id}}" bindtap="tapName" wx:elif="{{isshow>10&&isshow<=50}}"> 大于10，小于等于50</view>
+  <view id="v-msg{{id}}" bindtap="tapName" wx:else> 大于50</view>
+</block>
+
+<view class="contain" wx:if="{{false}}">
+  <template name="myTemplate">
+    <view>
+      <text> for: {{for}} </text>
+      <view>
+        <!-- 一个小技巧，用来换行 -->
+      </view>
+      <text> bar: {{bar}} </text>
+    </view>
+  </template>
+  <template is="myTemplate" data="{{for:a,bar:b}}"> </template>
+</view>
+<block wx:for="{{colorArray}}"  wx:if="{{false}}"  >
+<view> 索引: {{index}} ,值: {{item.value}}</view>
+</block>
 
 

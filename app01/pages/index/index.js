@@ -8,6 +8,13 @@ Page({
     message:'hello 小程序！!!',
     id:"",
     isshow : 55,
+    a:1,
+    b:2,
+    colorArray:[ {value:'red'},
+            {value:'yellow'},
+            {value:'black'},
+            {value:'white'}
+    ],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
