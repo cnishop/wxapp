@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    intoView:"v1"
   },
 
   /**
@@ -70,6 +70,27 @@ Page({
   scrolltolowerFun: function (e) {
     console.log('滚动都了底部差30像素内, 事件对象内容为：')
     console.log(e)
+  },
+
+  scrollToV1:function(){
+    this.setData({
+      intoView:'v1'
+    })
+    console.log('滚动到 v1')
+  },
+
+  scrollToV2: function () {
+    this.setData({
+      intoView: 'v2'
+    })
+    console.log('滚动到 v2')
+  },
+
+  scrollToV3: function () {
+    this.setData({
+      intoView: 'v3'
+    })
+    console.log('滚动到 v3')
   },
 
 })

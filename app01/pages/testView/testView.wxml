@@ -22,4 +22,8 @@
 </view>
 </scroll-view>
 
+<button  bindtap="scrollToV1"> 滚动到 v1 </button>
+<button  bindtap="scrollToV2"> 滚动到 v2 </button>
+<button  bindtap="scrollToV3"> 滚动到 v3 </button>
+
 </view>
