@@ -1,0 +1,21 @@
+<!--pages/checkbox/checkbox.wxml-->
+
+<checkbox-group bindchange="checkbox1Change">
+  <label style='display:block' wx:for="{{items1}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+  </label>
+</checkbox-group>
+
+<view style="margin-top:30rpx;margin-bottom:30rpx;border-top:1px solid #000"></view>
+
+<checkbox-group bindchange="checkbox2Change">
+  <label style="display:block" wx:for="{{items2}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+  </label>
+</checkbox-group>
+
+<checkbox-group bindchange="checkboxChange">  
+  <block class="checkbox" wx:for="{{items}}">  
+    <checkbox  value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}  
+  </block>  
+</checkbox-group>  

@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container" wx:if="{{false}}">
+<view class="container" wx:if="{{true}}">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -12,7 +12,7 @@
   </view>
 </view>
 
-<block wx:if="{{false}}">
+<block wx:if="{{true}}">
   <view id="v-msg{{id}}" data-hi="xiaoxiao" bindtap="tapName" wx:if="{{isshow}}"> {{ message }} </view>
   <view id="v-msg{{id}}" bindtap="tapName"> isshow={{isshow}} </view>
   <view id="v-msg{{id}}" bindtap="tapName" wx:if="{{isshow<=10}}"> 小于或等于10</view>

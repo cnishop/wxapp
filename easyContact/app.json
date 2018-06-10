@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "view/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "简易通讯录"
+  }
+}

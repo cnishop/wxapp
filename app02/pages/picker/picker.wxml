@@ -1,0 +1,21 @@
+<!--pages/picker/picker.wxml-->
+
+<picker mode="selector" range="{{sex}}" value="0" bindchange="selectChange">
+  您选择的性别为：{{sex[selectedSexIndex]}}
+</picker>
+
+<picker mode="time" value="{{time}}" strat="{{timeStart}}" end="{{timeEnd}}" bindchange="selectChange2">
+  <view class="time">
+    当前时间选择:{{time}}
+  </view>
+</picker>
+
+<picker mode="date" value="{{date}}" strat="{{dateStart}}" end="{{dateEnd}}" fields="{{fields}}" bindchange="selectChange3">
+  <view class="picker">
+    当前日期选择:{{date}}
+  </view>
+</picker>
+
+<picker  range="{{['1','2','3']}}" > 
+  aaaaa
+</picker>

@@ -1,0 +1,16 @@
+<view>
+  <scroll-view scroll-y style="height:300rpx">
+    <view wx:for="{{contactData}}" wx:key="id">
+      <text> {{item.id}} </text>
+      <text>| {{item.name}} </text>
+      <text>| {{item.phone}} </text>
+      <text>| {{thisYear-item.birthday}} </text> |
+      <icon data-index="{{index}}" type="cancel" size='14' bindtap="deleteMe" />
+    </view>
+    </scroll-view>
+
+<button style="margin-top:50rpx;height:70rpx;font-size:29rpx"
+bindtap='addData'>
+  新增
+  </button>
+</view>

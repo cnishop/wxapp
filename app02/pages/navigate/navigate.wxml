@@ -1,0 +1,23 @@
+<!--pages/navigate/navigate.wxml-->
+
+<view>
+<navigator url ="../../pages/index/index"
+hover-class='navigator-hover'>首页
+</navigator>
+
+<navigator url ="../../pages/swiper/swiper"
+hover-class='navigator-hover'>焦点图
+</navigator>
+
+<navigator url ="../../pages/testView/testView"
+redirect
+hover-class='navigator-hover'>基本试图
+</navigator>
+
+<navigator url ="../../pages/basic/basic"
+hover-class='navigator-hover'>进度条
+</navigator>
+
+
+</view>
+

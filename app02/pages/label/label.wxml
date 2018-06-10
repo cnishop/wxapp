@@ -1,0 +1,11 @@
+<!--pages/label/label.wxml-->
+
+<view>
+  <label for="v_clickme2">
+    label 组件示例
+    <button id="v_clickme" bindtap="clickme">点一下我试试</button>
+
+  </label>
+</view>
+
+    <button id="v_clickme2" bindtap="clickme2">我是第二个按钮</button>
