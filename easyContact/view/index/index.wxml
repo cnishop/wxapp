@@ -1,5 +1,5 @@
 <view>
-  <scroll-view scroll-y style="height:300rpx">
+  <scroll-view scroll-y style="height:500rpx">
     <view wx:for="{{contactData}}" wx:key="id">
       <text> {{item.id}} </text>
       <text>| {{item.name}} </text>
@@ -9,8 +9,18 @@
     </view>
     </scroll-view>
 
-<button style="margin-top:50rpx;height:70rpx;font-size:29rpx"
-bindtap='addData'>
+<form bindsubmit='submitFun'>
+    <input class="ipt" name="name" type="text" placeholder="请输入用户名" />
+    <input class="ipt" name="phone" type="text" placeholder="请输入手机号" />
+    <input class="ipt" name="birthday" type="text" placeholder="请输入出生年月" />
+
+    <button class="theBtn" form-type="submit"
+     >
   新增
   </button>
+
+</form>
+
+
+
 </view>

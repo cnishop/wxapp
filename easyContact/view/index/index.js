@@ -71,5 +71,24 @@ Page({
     this.setData({
       contactData:newContactData
     })
+  },
+  submitFun:function(e){
+    console.log('提交了',e)
+    var newContactData = this.data.contactData
+    var newItem={
+      id:newContactData.length+1,
+      name:e.detail.value.name,
+      phone:e.detail.value.phone,
+      birthday:e.detail.value.birthday
+    }
+    newContactData.push(newItem)
+    this.setData({
+      contactData:newContactData
+    })
+
+
   }
+
+
+
 })
