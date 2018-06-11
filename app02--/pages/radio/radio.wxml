@@ -1,0 +1,14 @@
+<!--pages/radio/radio.wxml-->
+<radio-group  bindchange="radio1Change">
+  <label style='display:block' wx:for="{{items1}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+  </label>
+</radio-group>
+
+<view style="margin-top:30rpx;margin-bottom:30rpx;border-top:1px solid #000"></view>
+
+<radio-group  bindchange="radio2Change">
+  <label style="display:block" wx:for="{{items2}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+  </label>
+</radio-group>

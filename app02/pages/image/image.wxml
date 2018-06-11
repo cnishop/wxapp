@@ -1,0 +1,16 @@
+<!--pages/image/image.wxml-->
+<text>pages/image/image.wxml</text>
+
+<view style='text-align:center'>
+    <image 
+      style="border:1px solid red"
+      mode="{{modes[modeIndex]}}"
+      src="http://img.zcool.cn/community/0142135541fe180000019ae9b8cf86.jpg@1280w_1l_2o_100sh.png" 
+      >
+    </image>
+    <picker bindchange='pickerChangeFun' value='{{modeIndex}}' range="{{modes}}" >
+    <button>点击这里选择    </button>
+    </picker>
+
+
+</view>

@@ -1,13 +1,11 @@
 {
   "pages": [
-    "pages/image/image",
-    "pages/video/video",
-    "pages/audio/audio",    
+        
     "pages/form/form",  
     "pages/input/input",
     "pages/switch/switch",
     "pages/slider/slider", 
-    "pages/picker/picker",
+"pages/picker/picker",
     "pages/radio/radio",
     "pages/checkbox/checkbox",
     "pages/label/label",

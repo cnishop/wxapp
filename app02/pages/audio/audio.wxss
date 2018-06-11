@@ -1,0 +1,6 @@
+/* pages/audio/audio.wxss */
+
+.base{
+  text-align: center;
+  margin-top:40rpx;
+}

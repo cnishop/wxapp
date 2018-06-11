@@ -1,0 +1,9 @@
+/* pages/switch/switch.wxss */
+.commonMarginTop{
+  margin-top:50rpx;
+  text-align:center;
+}
+
+.commonFontColor{
+  color:red
+}

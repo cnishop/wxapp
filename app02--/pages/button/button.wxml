@@ -1,0 +1,10 @@
+<!--pages/button/button.wxml-->
+<text>pages/button/button.wxml</text>
+<button size='mini'>小按钮</button>
+<button>默认按钮</button>
+<view>
+<button loading="{{loading}}"  disabled="{{disabled}}" bindtap="switchState" > 提交
+
+</button>
+
+</view>

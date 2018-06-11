@@ -1,0 +1,19 @@
+<!--pages/audio/audio.wxml-->
+<text>pages/audio/audio.wxml</text>
+
+<view class="base">
+    <audio
+        id="theAudio"
+        controls
+        src="audio.mp3"
+        binderror='errFun'
+        bindplay='playFun'
+        bindpause='pauseFun'
+        bindtimeupdate='timeUpdateFun'
+        bindended='endedFun'
+    
+    >
+    
+    </audio>
+
+</view>

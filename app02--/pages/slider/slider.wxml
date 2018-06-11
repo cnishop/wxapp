@@ -1,0 +1,13 @@
+<!--pages/slider/slider.wxml-->
+<text>pages/slider/slider.wxml</text>
+
+<slider
+    value="{{initValue}}"
+    step="{{sStep}}"
+    show-value="{{isShowValue}}"
+    min="{{sMin}}"
+    max="{{sMax}}"
+    bindchange="sliderChanged"
+>
+
+</slider>

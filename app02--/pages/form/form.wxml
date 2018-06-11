@@ -46,10 +46,10 @@
   </view>
 
   <view class="top ">
-    <button form-type="submit">提交</button>
+    <button form-type="submit ">提交</button>
   </view>
 
   <view class="top ">
-    <button form-type="reset">重置</button>
+    <button form-type="reset ">重置</button>
   </view>
 </form>
