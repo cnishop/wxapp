@@ -1,9 +1,10 @@
 //index.js
 //获取应用实例
-const app = getApp()
-
+const app = getApp();
+var com = require('../../utils/common');
 Page({
   data: {
+    msg:'传前一个画面的参数',
     motto: 'Hello World',
     message:'hello 小程序！!!',
     id:"",
@@ -57,6 +58,7 @@ Page({
 
   onReady:function(){
     console.log('--index.js--onReady---页面初次渲染完成')
+    console.log(com)
   },
   onShow: function () {
     console.log('--index.js--onShow---页面显示')
@@ -84,7 +86,25 @@ Page({
     this.setData({
       message:'好吧，我居然被点了',
     })
-  }
+  },
+  change2: function () {
+    var stringTemplateTxt= "字符串模板数据"//定义一个变量并初始化值      
+    console.log(`我是${stringTemplateTxt}`)//将stringTemplateTxt变量的值输出到控制台 
+    this.setData({
+      msg: '111'
+    })
+  },
+
+  fnUserState:function() {
+    this.setData({
+      msg: com.echoHello('james')
+    })
+  },
+  fnUserState2(){
+    this.setData({
+      msg: com.echoBye('blue')
+    })
+  },
 
 }
 

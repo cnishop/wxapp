@@ -1,5 +1,6 @@
 //app.js
 App({
+  a:1,
   onLaunch: function () {
     console.log('--app.js--onLanch---小程序初始化')
     // 展示本地存储能力

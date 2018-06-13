@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.0.9",
 	"appid": "wx0b359ad0f4c649f7",
-	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%B5%8B%E8%AF%951",
+	"projectname": "easyContact",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

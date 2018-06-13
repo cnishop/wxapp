@@ -1,7 +1,10 @@
 {
   "pages": [
-     "pages/map/map",
+    
+    "pages/navigate/navigate",
     "pages/image/image",
+    "pages/index/index",
+    "pages/map/map",
     "pages/video/video",
     "pages/audio/audio",    
     "pages/form/form",  
@@ -13,11 +16,9 @@
     "pages/checkbox/checkbox",
     "pages/label/label",
     "pages/button/button",
-    "pages/navigate/navigate",
     "pages/basic/basic",
     "pages/swiper/swiper",
     "pages/testView/testView",
-    "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {

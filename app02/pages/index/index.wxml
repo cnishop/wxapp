@@ -30,10 +30,14 @@
       <text> bar: {{bar}} </text>
     </view>
   </template>
-  <template is="myTemplate" data="{{for:a,bar:b}}"> </template>
+  <template is="myTemplate" data="{{for:a,bar:b}}" wx:key="{{indxe}}"> </template>
 </view>
-<block wx:for="{{colorArray}}"  wx:if="{{false}}"  >
+<block wx:for="{{colorArray}}"  wx:if="{{true}}" wx:key="{{indxe}}" >
 <view> 索引: {{index}} ,值: {{item.value}}</view>
 </block>
 
-
+<view  wx:if="{{false}}" > 
+<text bindtap='change2'  >{{msg}}</text>
+<button type="primary" bindtap='fnUserState'>点击欢迎</button>
+<button type="primary" bindtap='fnUserState2'>点击退出</button>
+</view>

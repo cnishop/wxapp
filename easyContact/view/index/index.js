@@ -47,9 +47,9 @@ Page({
     ]
   },
   deleteMe: function (e) {
-    console.log(e)
+    console.log(e.target.dataset.index)
     var newContactData = this.data.contactData
-    var index=e.currentTarget.dataset.index
+    var index = e.target.dataset.index   //e.currentTarget.dataset.index
     newContactData.splice(
       index,1
     )

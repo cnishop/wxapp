@@ -6,6 +6,7 @@ Page({
    */
   data: {
         modes:[
+            'widthFix',
             'scaleToFill',
             'aspectFit',
             'aspectFill',
