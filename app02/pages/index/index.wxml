@@ -13,6 +13,7 @@
 </view>
 
 <block wx:if="{{true}}">
+<view id="v-msg{{id}}" bindtap="navto"> {{ nav }}  </view>
   <view id="v-msg{{id}}" data-hi="xiaoxiao" bindtap="tapName" wx:if="{{isshow}}"> {{ message }} </view>
   <view id="v-msg{{id}}" bindtap="tapName"> isshow={{isshow}} </view>
   <view id="v-msg{{id}}" bindtap="tapName" wx:if="{{isshow<=10}}"> 小于或等于10</view>

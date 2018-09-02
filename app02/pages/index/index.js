@@ -6,6 +6,7 @@ Page({
   data: {
     msg:'传前一个画面的参数',
     motto: 'Hello World',
+    nav: '点击进入导航界面',
     message:'hello 小程序！!!',
     id:"",
     isshow : 55,
@@ -26,6 +27,8 @@ Page({
       url: '../logs/logs'
     })
   },
+
+  
   onLoad: function () {
     console.log('--index.js--onload---页面加载')
     if (app.globalData.userInfo) {
@@ -85,6 +88,12 @@ Page({
     console.log(event)
     this.setData({
       message:'好吧，我居然被点了',
+    })
+  },
+  navto: function (event) {
+    console.log(event)
+    wx.navigateTo({
+      url: '../../pages/navigate/navigate'
     })
   },
   change2: function () {
