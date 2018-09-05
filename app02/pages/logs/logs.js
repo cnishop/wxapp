@@ -1,5 +1,6 @@
 //logs.js
-const util = require('../../utils/util.js')
+const util = require('../../utils/util.js');
+var app = getApp();
 
 Page({
   data: {
@@ -17,6 +18,7 @@ Page({
   },
   onShow: function () {
     console.log('--logs.js--onShow---页面显示')
+    console.log('log page: ' + app.globalData.userName)
   },
   onHide: function () {
     console.log('--logs.js--onHide---页面隐藏')

@@ -2,6 +2,7 @@
   "pages": [
 
     "pages/index/index",
+    "pages/event/event",
     "pages/navigate/navigate",
     "pages/image/image",
     "pages/map/map",

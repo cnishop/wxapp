@@ -2,7 +2,11 @@
 
 <view>
 <navigator url ="../../pages/index/index"
-hover-class='navigator-hover'>首页
+hover-class='navigator-hover'>index
+</navigator>
+
+<navigator url ="../../pages/event/event"
+hover-class='navigator-hover'>event 事件
 </navigator>
 
 <navigator url ="../../pages/swiper/swiper"
@@ -18,6 +22,9 @@ hover-class='navigator-hover'>基本试图
 hover-class='navigator-hover'>进度条
 </navigator>
 
+<navigator url ="../../pages/map/map"
+hover-class='navigator-hover'>map 地图
+</navigator>
 
 </view>
 

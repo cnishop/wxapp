@@ -65,6 +65,8 @@ Page({
   },
   onShow: function () {
     console.log('--index.js--onShow---页面显示')
+    app.globalData.userName ="my app"
+    console.log(app.globalData.userName)
   },
   onHide: function () {
     console.log('--index.js--onHide---页面隐藏')
@@ -92,6 +94,7 @@ Page({
   },
   navto: function (event) {
     console.log(event)
+    console.log(event.target.dataset.userid)
     wx.navigateTo({
       url: '../../pages/navigate/navigate'
     })

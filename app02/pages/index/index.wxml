@@ -5,6 +5,7 @@
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="userinfo-nickname">{{userInfo.province}}</text>
     </block>
   </view>
   <view class="usermotto">
@@ -12,8 +13,11 @@
   </view>
 </view>
 
+
 <block wx:if="{{true}}">
-<view id="v-msg{{id}}" bindtap="navto"> {{ nav }}  </view>
+<view id="v-msg{{id}}" >
+  <text data-userid='1234' id="movetonav"  bindtap='navto'>  {{ nav }}  </text>
+  </view>
   <view id="v-msg{{id}}" data-hi="xiaoxiao" bindtap="tapName" wx:if="{{isshow}}"> {{ message }} </view>
   <view id="v-msg{{id}}" bindtap="tapName"> isshow={{isshow}} </view>
   <view id="v-msg{{id}}" bindtap="tapName" wx:if="{{isshow<=10}}"> 小于或等于10</view>
@@ -21,7 +25,7 @@
   <view id="v-msg{{id}}" bindtap="tapName" wx:else> 大于50</view>
 </block>
 
-<view class="contain" wx:if="{{false}}">
+<view class="contain" wx:if="{{fales}}">
   <template name="myTemplate">
     <view>
       <text> for: {{for}} </text>
@@ -36,7 +40,6 @@
 <block wx:for="{{colorArray}}"  wx:if="{{true}}" wx:key="{{indxe}}" >
 <view> 索引: {{index}} ,值: {{item.value}}</view>
 </block>
-
 <view  wx:if="{{false}}" > 
 <text bindtap='change2'  >{{msg}}</text>
 <button type="primary" bindtap='fnUserState'>点击欢迎</button>

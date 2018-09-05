@@ -43,6 +43,7 @@ App({
     console.log('--app.js--onHide---小程序隐藏')
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    userName: null
   }
 })
