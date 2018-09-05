@@ -1,6 +1,6 @@
 {
   "pages": [
-
+    "pages/swiper/swiper",
     "pages/index/index",
     "pages/event/event",
     "pages/navigate/navigate",
@@ -18,7 +18,7 @@
     "pages/label/label",
     "pages/button/button",
     "pages/basic/basic",
-    "pages/swiper/swiper",
+    
     "pages/testView/testView",
     "pages/logs/logs"
   ],
