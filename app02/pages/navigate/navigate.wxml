@@ -26,5 +26,10 @@ hover-class='navigator-hover'>进度条
 hover-class='navigator-hover'>map 地图
 </navigator>
 
+<navigator url ="../../pages/swiper/swiper"
+hover-class='navigator-hover'>swiper
+</navigator>
+
+
 </view>
 
