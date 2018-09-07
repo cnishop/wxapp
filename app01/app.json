@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/testView/testView",
     "pages/index/index",
+    "pages/testView/testView",
+    
     "pages/logs/logs"
   ],
   "window":{

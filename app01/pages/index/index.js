@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var helloiwen = require('../data/hellodata.js')
 
 Page({
   data: {
@@ -27,6 +28,10 @@ Page({
   },
   onLoad: function () {
     console.log('--index.js--onload---页面加载')
+    this.setData({
+      hello:helloiwen.helloData
+    })
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
