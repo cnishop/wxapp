@@ -4,19 +4,19 @@
 <swiper indicator-dots="true" 
 autoplay='{{isAutoplay}}'
 interval='1000'
-duration='100'
+duration='800'
 bindchange="picChange"
 >
   <swiper-item>
-    <image src="http://img.zcool.cn/community/0142135541fe180000019ae9b8cf86.jpg@1280w_1l_2o_100sh.png" width="355" height="150"/>
+    <image src="http://img.zcool.cn/community/0142135541fe180000019ae9b8cf86.jpg@1280w_1l_2o_100sh.png"/>
   </swiper-item>
 
    <swiper-item>
-    <image src="http://img.zcool.cn/community/010f87596f13e6a8012193a363df45.jpg@1280w_1l_2o_100sh.jpg" width="355" height="150"/>
+    <image src="http://img.zcool.cn/community/010f87596f13e6a8012193a363df45.jpg@1280w_1l_2o_100sh.jpg" />
   </swiper-item>
 
    <swiper-item>
-    <image src="http://img.taopic.com/uploads/allimg/120727/201995-120HG1030762.jpg" width="355" height="150"/>
+    <image src="http://img1.imgtn.bdimg.com/it/u=3044191397,2911599132&fm=27&gp=0.jpg" />
   </swiper-item>
 
 </swiper>

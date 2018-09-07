@@ -25,7 +25,7 @@
   <view id="v-msg{{id}}" bindtap="tapName" wx:else> 大于50</view>
 </block>
 
-<view class="contain" wx:if="{{fales}}">
+<view class="contain" wx:if="{{true}}">
   <template name="myTemplate">
     <view>
       <text> for: {{for}} </text>
