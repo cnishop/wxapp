@@ -9,10 +9,6 @@ hover-class='navigator-hover'>index
 hover-class='navigator-hover'>event 事件
 </navigator>
 
-<navigator url ="../../pages/swiper/swiper"
-hover-class='navigator-hover'>焦点图
-</navigator>
-
 <navigator url ="../../pages/testView/testView"
 redirect
 hover-class='navigator-hover'>基本试图
