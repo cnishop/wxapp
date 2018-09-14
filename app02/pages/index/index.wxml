@@ -40,8 +40,10 @@
 <block wx:for="{{colorArray}}"  wx:if="{{true}}" wx:key="{{indxe}}" >
 <view> 索引: {{index}} ,值: {{item.value}}</view>
 </block>
-<view  wx:if="{{false}}" > 
+<view  wx:if="{{true}}" > 
 <text bindtap='change2'  >{{msg}}</text>
 <button type="primary" bindtap='fnUserState'>点击欢迎</button>
 <button type="primary" bindtap='fnUserState2'>点击退出</button>
+  <text class="user-motto">"item-{{motto}}"</text>
 </view>
+  
