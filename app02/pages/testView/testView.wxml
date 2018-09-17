@@ -27,3 +27,14 @@
 <button  bindtap="scrollToV3"> 滚动到 v3 </button>
 
 </view>
+
+<view class="scroll_box"> 
+    <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+
+      <view class="item_list" wx:for="true">
+        <image src="../../images/tab1.png" class="item_book_img" mode="aspectFill"></image>
+        <view class="item_book_text">测试数据</view>
+      </view>
+     
+    </scroll-view>
+  </view>
